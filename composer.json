@@ -1,7 +1,7 @@
 {
   "name": "shirtnetwork/designer-backend-skeleton",
   "description": "Project skeleton for shirtnetwork designer backend solution",
-  "license": "Commercial",
+  "license": "MIT",
   "require": {
     "designer-backend": "^1.0"
   },
