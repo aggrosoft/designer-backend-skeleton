@@ -3,7 +3,7 @@
   "description": "Project skeleton for shirtnetwork designer backend solution",
   "license": "MIT",
   "require": {
-    "designer-backend": "^1.0"
+    "shirtnetwork/designer-backend": "^1.0"
   },
   "repositories": [{
     "type": "composer",
