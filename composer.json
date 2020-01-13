@@ -1,0 +1,12 @@
+{
+  "name": "shirtnetwork/designer-backend-skeleton",
+  "description": "Project skeleton for shirtnetwork designer backend solution",
+  "license": "Commercial",
+  "require": {
+    "designer-backend": "^1.0"
+  },
+  "repositories": [{
+    "type": "composer",
+    "url": "https://packages.aggrosoft.de"
+  }]
+}
