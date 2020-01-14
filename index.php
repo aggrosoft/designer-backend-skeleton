@@ -10,5 +10,9 @@ if (!file_exists(__DIR__ . '/config.inc.php')){
 
 $config = include __DIR__ . '/config.inc.php';
 
+if ($config['debug'] === true){
+    @ini_set("display_errors",1);
+}
+
 $server = new Server($config);
 $server->serve();

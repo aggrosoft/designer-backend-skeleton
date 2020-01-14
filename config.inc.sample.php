@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'debug' => false,
     'db' => [
         'path' => __DIR__ . '/var/db/'
     ],
