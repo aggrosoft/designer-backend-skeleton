@@ -2,12 +2,15 @@
 
 return [
     'db' => [
-        'path' => __DIR__ . '/db/'
+        'path' => __DIR__ . '/var/db/'
     ],
     'config' => [
-        'path' => __DIR__ . '/configs/'
+        'path' => __DIR__ . '/var/configs/'
     ],
     'fonts' => [
-        'path' => __DIR__ . '/fonts/'
+        'path' => __DIR__ . '/var/fonts/'
+    ],
+    'twig' => [
+        'cache' => __DIR__ . '/var/twig/'
     ]
 ];
