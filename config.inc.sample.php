@@ -2,6 +2,7 @@
 
 return [
     'debug' => false,
+    'allowed-origins' => '*',
     'db' => [
         'path' => __DIR__ . '/var/db/'
     ],
@@ -13,5 +14,9 @@ return [
     ],
     'twig' => [
         'cache' => __DIR__ . '/var/twig/'
-    ]
+    ],
+    'upload' => [
+        'path' => __DIR__ . '/var/uploads/',
+        'cache' => __DIR__ . '/var/uploadsmeta/'
+    ],
 ];
