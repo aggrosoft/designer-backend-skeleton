@@ -29,7 +29,7 @@ apache webserver. We recommend using a subdomain or a separate domain for the ap
 
 ## Usage
 
-Depending on your endpoint you will need to configure upload and config urls. Use as following:
+Depending on your consuming system you will need to configure upload and config urls. Use as following:
 
 **Upload Endpoint** 
 
