@@ -43,6 +43,15 @@ Fire up the settings interface to define fonts:
 
 https://config.example.org/settings/fonts
 
+## Security
+
+:exclamation: Currently it is up to you to handle authentication to the settings endpoint. 
+Also be sure to set allowed-origins in config.inc.php so only specific endpoints can upload files and configurations.
+
+## Cron
+
+There will be a cronjob to cleanup unused files and configurations soon.
+
 ## Updating
 
 Similar to installing, if you did not change the skeleton do the following:
