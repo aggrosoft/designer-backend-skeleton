@@ -50,7 +50,13 @@ Also be sure to set allowed-origins in config.inc.php so only specific endpoints
 
 ## Cron
 
-There will be a cronjob to cleanup unused files and configurations soon.
+To cleanup old uploaded files including their metadata the server ships with a symfony console command. Execute as following
+
+```bash
+bin/console uploads:cleanup
+```
+
+This will delete all files older than 30 days, if the file was manifested it is valid 3 years instead.
 
 ## Updating
 
