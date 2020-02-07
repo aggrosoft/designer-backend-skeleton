@@ -19,4 +19,11 @@ return [
         'path' => __DIR__ . '/var/uploads/',
         'cache' => __DIR__ . '/var/uploadsmeta/'
     ],
+    'auth' => [
+        # see https://github.com/tuupola/slim-basic-auth#usage
+        # path option will be configured by app and will be overridden
+        'users' => [
+            # "user" => "passw0rd"
+        ]
+    ]
 ];
