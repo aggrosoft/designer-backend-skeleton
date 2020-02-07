@@ -45,7 +45,9 @@ https://config.example.org/settings/fonts
 
 ## Security
 
-:exclamation: Currently it is up to you to handle authentication to the settings endpoint. 
+:exclamation: Be sure to add at least one user in the auth section of the config file, 
+otherwise authentication is skipped and everybody will be able to modify your settings.
+ 
 Also be sure to set allowed-origins in config.inc.php so only specific endpoints can upload files and configurations.
 
 ## Cron
