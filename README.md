@@ -50,6 +50,41 @@ otherwise authentication is skipped and everybody will be able to modify your se
  
 Also be sure to set allowed-origins in config.inc.php so only specific endpoints can upload files and configurations.
 
+## NGINX
+
+You can use NGINX as a webserver, as the designer backend is a slim application you will have to configure NGINX as following
+
+```nginxconfig
+server {
+    listen 80;
+    server_name example.com;
+    index index.php;
+    error_log /path/to/example.error.log;
+    access_log /path/to/example.access.log;
+    root /path/to/public;
+
+    location / {
+        try_files $uri /index.php$is_args$args;
+    }
+
+    location ~ \.php {
+        try_files $uri =404;
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        include fastcgi_params;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_param SCRIPT_NAME $fastcgi_script_name;
+        fastcgi_index index.php;
+        fastcgi_pass 127.0.0.1:9000;
+    }
+}
+``` 
+
+:exclamation: 
+Since nginx will not route `/config` routes using this method you can rename `config.inc.php` to `cfg.inc.php` 
+as a workaround. See the [Slim v4 Documentation](http://www.slimframework.com/docs/v4/start/web-servers.html)
+for further information.
+Contributions to improving the nginx config are very welcome.
+
 ## Cron
 
 To cleanup old uploaded files including their metadata the server ships with a symfony console command. Execute as following

@@ -8,7 +8,7 @@ $configFile = dirname(__FILE__) . '/../config.inc.php';
 $cfgFile = dirname(__FILE__) . '/../cfg.inc.php';
 
 if (!file_exists($configFile) && !file_exists($cfgFile)){
-    copy(__DIR__ . '/config.inc.sample.php', __DIR__ . '/config.inc.php');
+    copy(dirname(__FILE__) . '/cfg.inc.sample.php', $cfgFile);
 }
 
 if (file_exists($configFile)) {
