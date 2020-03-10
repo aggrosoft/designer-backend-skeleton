@@ -5,7 +5,14 @@ require __DIR__.'/../vendor/autoload.php';
 
 use Shirtnetwork\Backend\Console\Application;
 
-$config = include __DIR__ . '/../config.inc.php';
+$configFile = dirname(__FILE__) . '/../config.inc.php';
+$cfgFile = dirname(__FILE__) . '/../cfg.inc.php';
+
+if (file_exists($configFile)) {
+  $config = include $configFile;
+}elseif(file_exists($cfgFile)) {
+  $config = include $cfgFile;
+}
 
 $application = new Application();
 $application->setConfig($config);
