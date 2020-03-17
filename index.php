@@ -4,11 +4,11 @@ require __DIR__ . '/vendor/autoload.php';
 
 use Shirtnetwork\Backend\Server\Server;
 
-$configFile = dirname(__FILE__) . '/../config.inc.php';
-$cfgFile = dirname(__FILE__) . '/../cfg.inc.php';
+$configFile = __DIR__ . '/config.inc.php';
+$cfgFile = __DIR__ . '/cfg.inc.php';
 
 if (!file_exists($configFile) && !file_exists($cfgFile)){
-    copy(dirname(__FILE__) . '/cfg.inc.sample.php', $cfgFile);
+    copy(__DIR__ . '/cfg.inc.sample.php', $cfgFile);
 }
 
 if (file_exists($configFile)) {
