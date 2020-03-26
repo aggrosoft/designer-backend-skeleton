@@ -1,5 +1,9 @@
 <?php
 
+if (version_compare(phpversion(), '7.1.0', '<')) {
+    die('shirtnetwork designer backend server needs at least PHP 7.1 to run');
+}
+
 require __DIR__ . '/vendor/autoload.php';
 
 use Shirtnetwork\Backend\Server\Server;
