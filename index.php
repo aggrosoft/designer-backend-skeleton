@@ -21,6 +21,10 @@ if (file_exists($configFile)) {
     $config = include $cfgFile;
 }
 
+// Include sample file and merge, allows for new options to be added with defaults
+$sample = include __DIR__ . '/cfg.inc.sample.php';
+$config = $sample ? array_replace_recursive($sample, $config) : $config;
+
 if ($config['debug'] === true){
     @ini_set("display_errors",1);
 }

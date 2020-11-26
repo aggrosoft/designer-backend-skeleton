@@ -7,7 +7,9 @@ return [
         'path' => __DIR__ . '/var/db/'
     ],
     'config' => [
-        'path' => __DIR__ . '/var/configs/'
+        'path' => __DIR__ . '/var/configs/',
+        'tmp' => __DIR__ . '/var/tmp/',
+        'cache_previews' => false
     ],
     'fonts' => [
         'path' => __DIR__ . '/var/fonts/'
