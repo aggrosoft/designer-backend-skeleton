@@ -1,0 +1,8 @@
+{
+  "name": "designer-backend-skeleton",
+  "version": "1.0.11",
+  "private": true,
+  "dependencies": {
+    "designer-backend-node": "file:./vendor/shirtnetwork/designer-backend/node"
+  }
+}
