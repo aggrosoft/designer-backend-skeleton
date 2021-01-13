@@ -31,7 +31,7 @@ return [
     ]
     /*
     // Uncomment to use javascript based preview renderer, node must be installed for this!
-    // Also you will have to run npm install in node folder
+    // Also you will have to run npm install
     'renderer' => [
         'class' => \Shirtnetwork\Backend\Config\Fabric\Renderer::class,
         'config' => [
