@@ -4,6 +4,8 @@ This backend will handle configuration files, font management and uploading file
 the [shirtnetwork](https://www.shirtnetwork.com) designer. This backend is used for all implementations. Feel free to adapt
 this skeleton to your own needs.
 
+:exclamation: **We recommend using the [nodejs based version](https://www.github.com/aggrosoft/designer-backend-skeleton-node) whenever possible**
+
 ## Installation
 
 Use git to clone the repository
