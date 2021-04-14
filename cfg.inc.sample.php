@@ -11,6 +11,9 @@ return [
         'tmp' => __DIR__ . '/var/tmp/',
         'cache_previews' => false
     ],
+    'templates' => [
+        'path' => __DIR__ . '/var/templates/'
+    ],
     'fonts' => [
         'path' => __DIR__ . '/var/fonts/'
     ],
